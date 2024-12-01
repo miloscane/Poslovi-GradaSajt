@@ -40,3 +40,22 @@ http.listen(process.env.PORT, function(){
 server.get('/', async (req,res)=>{
 	res.render("home",{});
 });
+
+server.post('/karijera', async (req,res)=>{
+	var mailOptions = {
+		from: '"Poslovi grada sajt" <admin@poslovigrada.rs>',
+		to: "posao@poslovigrada.rs,miloscane@gmail.com",
+		subject: 'Nova aplikacija za posao',
+		html: 'Ime: '+req.body.ime+'<br>Kontakt telefon:'+req.body.telefon
+	};
+
+	transporter.sendMail(mailOptions, (error, info) => {
+		if (error) {
+			logError(error);
+			res.redirect("/");
+		}else{
+			res.render("karijeraUspesno",{});
+		}
+	});
+	
+});

@@ -312,6 +312,156 @@ input[type=number] {
     background-position:center center;
 }
 
+.career{
+    position:relative;
+    min-width:100vw;
+    min-height:100vh;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+    background-size:cover;
+    background-image:url(/images/image4.jpg);
+}
+
+.career .header{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,0.4);
+    padding-bottom:20px;
+}
+
+.career .header .logoWrap{
+    position:relative;
+    padding-top:40px;
+    width:80px;
+    display:inline-block;
+    vertical-align: bottom;
+}
+
+.career .header .logoWrap img{
+    display:block;
+    position:relative;
+    z-index:200;
+}
+
+.career .header .logoWrap .box{
+    width:100%;
+    height:60px;
+    position:absolute;
+    top:0;
+    background-color: #253965;
+    z-index:100;
+}
+
+.career .header .logoCaptionWrap{
+    display:inline-block;
+    vertical-align: bottom;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.career .spacer{
+    padding-top:200px;
+}
+
+.career .infoWrap{
+    position:relative;
+}
+
+.career .infoWrap h1{
+    font-weight:700;
+    width:100%;
+    padding:10px;
+    background-color: rgba(37,57,101,0.6);
+    color:rgb(255,255,255);
+    margin:0;
+    text-align:center;
+}
+
+.career .infoWrap .inlines{
+    font-size: 0;
+    text-align: center;
+    background-color: rgba(37,57,101,0.6);
+}
+
+.career .infoWrap .inlines .inline{
+    font-size: 16px;
+    width:50%;
+    display:inline-block;
+    vertical-align: top;
+    padding:10px;
+}
+
+.career .infoWrap .inlines .inline:first-child{
+    text-align: left;
+}
+
+.inputWrapper{
+    position:relative;
+}
+
+.inputWrap{
+    margin-bottom:20px;
+}
+
+.inputWrap .inputTitle{
+    font-weight:bold;
+    font-size:14px;
+    color:rgb(255,255,255);
+    margin-bottom:5px;
+    text-align: left;
+}
+
+.inputWrap input[type="text"]{
+    padding:5px 5px;
+    font-size:14px;
+    color:rgb(37,57,101);
+    line-height:20px;
+    width:100%;
+    outline:none;
+    box-shadow:1px 1px 4px rgba(255,255,255,0);
+    border:2px solid rgb(217,70,80);
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+.inputWrap input[type="text"]:focus{
+    box-shadow:1px 1px 4px rgba(255,255,255,0.5);
+    color:rgb(37,57,101);
+    border:2px solid rgb(217,70,80);
+
+}
+
+.inputWrap input[type="submit"]{
+    border:none;
+    outline:none;
+    color:rgb(255,255,255);
+    background-color:rgba(217,70,80,0.8);
+    width:100%;
+    font-size:20px;
+    padding:10px;
+    cursor:pointer;
+    border-radius:0px;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+.inputWrap input[type="submit"]:hover{
+    background-color:rgba(217,70,80,1);
+    border-radius:5px;
+}
+
 @media screen and (max-width: 800px) {
     .email{
         top:5px;
@@ -351,5 +501,36 @@ input[type=number] {
     .section4{
         background-image:url(/images/image4-r.jpg);
         background-position:center center;
+    }
+
+
+    .career .header{
+        padding-bottom:10px;
+    }
+
+    .career .spacer{
+        padding-top: 100px;
+    }
+
+
+    .career .header .logoCaptionWrap{
+        font-size:16px;
+        margin-bottom:8px;
+    }
+
+    .career .header .logoWrap{
+        width:40px;
+        padding-top:20px;
+    }
+
+    .career .infoWrap .inlines{
+        width:70%;
+        margin:0 auto;
+    }
+
+    .career .infoWrap .inlines .inline{
+        display:block;
+        width:100%;
+
     }
 }
