@@ -38,6 +38,10 @@ http.listen(process.env.PORT, function(){
 });
 
 server.get('/', async (req,res)=>{
+	res.render("home-old",{});
+});
+
+server.get('/posao', async (req,res)=>{
 	res.render("home",{});
 });
 
